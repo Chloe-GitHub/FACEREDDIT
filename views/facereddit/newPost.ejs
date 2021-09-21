@@ -1,0 +1,13 @@
+<% layout('layouts/boilerplate') %>
+    <title>Make New Post</title>
+
+    <h4>You can make a new post here: </h4>
+    <form action="/newPost/<%= subName %>" method="POST">
+        <p>
+            <label class="form-label" for="title">Title</label>
+            <input class="form-control" type="text" cols="35" rows="5" name="title" id="title" placeholder="Title">
+        </p>
+        <label class="form-label" for="content">Content</label>
+            <textarea class="form-control" type="text" id="content" cols="35" rows="15" name="content" placeholder="Content"></textarea>
+        <button class="btn btn-success" type="submit" class="btn btn-success">Submit</button>
+    </form>

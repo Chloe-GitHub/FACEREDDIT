@@ -1,0 +1,12 @@
+<% layout('layouts/boilerplate') %>
+    <title>Create Your New Sub</title>
+
+    <h4>Create New Sub</h4>
+    <div class="mb-3">
+        <form action="/newSub" method ="POST">
+            <label class="form-label" for="subName">SubName</label>
+                <input class="form-control" type="text" name="subName" id="subName" placeholder="subName">
+            <button class="btn btn-success" >Submit</button>
+        </form>
+    </div>
+

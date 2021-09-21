@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate') %>    
+    
+    <title> <%= subFR %> Sub</title>
+    <h2 style="text-align: center;">Welcome to <%= subFR %> Sub! </h2>
+    <p><h5 style="text-align: center;">Posts under <%= subFR %> Sub: </h5></p>
+
+        <% if(!sub.posts) {%> 
+            <h4>The <%= sub.subName %> sub is so empty...</h4>
+        <% }  else {%>
+            <% for (let post of sub.posts) {%> 
+            
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" href="/post/<%= sub.subName %>/<%= post._id %>" >
+                        <h5><%= post.title %></h5>
+                        <h8><%= post.content %></h8>
+                    </a>
+                </div> 
+                
+            <% } %> 
+        <% } %>
+        
+        <div class="btn-group btn-group-sm" role="group" class="badge"  >
+                <form action="/newPost/<%= subFR %>" method="GET">
+                    <button class="btn btn-outline-danger" type="button" onclick="location.href = '/newPost/<%= subFR %>'">Post under <%= subFR %> Sub </button>
+                </form>
+                
+                <form action="/" method="GET">
+                    <button class="btn btn-outline-danger" type="button" class="btn btn-success btn-sm" onclick="location.href = '/'">Go back to the HomePage</button>
+                </form>
+            
+        </div>
+
+
+
+
+
+
