@@ -6,10 +6,8 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 
+const dbUrl = process.env.DB_URL||'mongodb://localhost:27017/facereddit'
 
-
-
-const dbUrl = process.env.dbUrl||'mongodb://localhost:27017/facereddit';
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
