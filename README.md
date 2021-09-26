@@ -27,7 +27,7 @@ Only User **123** who created the comment can access the edit and delete functio
 ![Authorization and Authentication](https://user-images.githubusercontent.com/84604184/134824591-c89a90ef-5fc0-4325-bcc4-2b1c488b66fa.gif)
 
 
-Register then login with a new identity as User **Chloe**, edit and delete authroization of the comment created by User123 is not granted to User **Chloe**:
+Register then login with a new identity as User **Chloe**, edit and delete authroization of the comment created by User **123** is not granted to User **Chloe**:
 
 
 ![Register and login with a new identity](https://user-images.githubusercontent.com/84604184/134825847-52032944-240f-439b-a5a0-d499c0adc3ca.gif)
